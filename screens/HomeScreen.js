@@ -11,6 +11,8 @@ import {
 } from 'react-native';
 
 import { MonoText } from '../components/StyledText';
+import Icon from 'react-native-vector-icons/FontAwesome'
+
 
 export default function HomeScreen() {
   return (
@@ -31,7 +33,7 @@ export default function HomeScreen() {
 
         <View style={styles.getStartedContainer}>
           <DevelopmentModeNotice />
-
+            <Icon name="rocket" size={90} color="red"/>
           <Text style={styles.getStartedText}>Get started by opening</Text>
 
           <View
@@ -55,7 +57,7 @@ export default function HomeScreen() {
 
       <View style={styles.tabBarInfoContainer}>
         <Text style={styles.tabBarInfoText}>
-          This is a tab bar. You can edit it in:
+          This is edited tab bar. You can edit it in:
         </Text>
 
         <View
