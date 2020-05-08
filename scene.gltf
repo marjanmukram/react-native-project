@@ -3,50 +3,50 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 34043,
+      "count": 10561,
       "max": [
-        0.014530000276863575,
-        0.00066999997943639755,
-        0.030130000784993172
+        0.18419000506401062,
+        0.05333000048995018,
+        0.37444001436233521
       ],
       "min": [
-        -0.041379999369382858,
-        -0.11482000350952148,
-        -0.025429999455809593
+        -0.21275000274181366,
+        -0.0814099982380867,
+        -0.3176099956035614
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 408516,
+      "byteOffset": 126732,
       "componentType": 5126,
-      "count": 34043,
+      "count": 10561,
       "max": [
-        0.99997466802597046,
-        0.99999731779098511,
-        0.99999934434890747
+        0.99969398975372314,
+        0.99998897314071655,
+        0.99405181407928467
       ],
       "min": [
-        -0.9999963641166687,
-        -0.99999040365219116,
-        -0.99999302625656128
+        -0.99937671422958374,
+        -0.99996286630630493,
+        -0.99778300523757935
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 34043,
+      "count": 10561,
       "max": [
-        0.99999773502349854,
-        1,
-        0.99999725818634033,
+        0.99598240852355957,
+        0.99977391958236694,
+        0.99999827146530151,
         1
       ],
       "min": [
-        -0.99999994039535522,
-        -1,
-        -0.99999821186065674,
+        -0.99783188104629517,
+        -0.99845778942108154,
+        -0.99997562170028687,
         -1
       ],
       "type": "VEC4"
@@ -54,9 +54,9 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 34043,
+      "count": 10561,
       "max": [
-        0.84843999147415161,
+        0.86818999052047729,
         0.99500000476837158
       ],
       "min": [
@@ -68,9 +68,9 @@
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 190266,
+      "count": 57546,
       "max": [
-        34042
+        10560
       ],
       "min": [
         0
@@ -82,40 +82,40 @@
     "extras": {
       "author": "jarmovac.curak (https://sketchfab.com/jarmovac.curak)",
       "license": "CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)",
-      "source": "https://sketchfab.com/3d-models/hammerstone-f2-kaludjerske-livade-4eae88d6dc954a08851ccb392aeb322d",
-      "title": "Hammerstone, F2- Kaludjerske livade"
+      "source": "https://sketchfab.com/3d-models/hammerstone1-24335183fb2a40bca928bedfbf0c982c",
+      "title": "Hammerstone#1"
     },
-    "generator": "Sketchfab-8.6.0",
+    "generator": "Sketchfab-8.42.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 761064,
+      "byteLength": 230184,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 272344,
-      "byteOffset": 761064,
+      "byteLength": 84488,
+      "byteOffset": 230184,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 817032,
-      "byteOffset": 1033408,
+      "byteLength": 253464,
+      "byteOffset": 314672,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 544688,
-      "byteOffset": 1850440,
+      "byteLength": 168976,
+      "byteOffset": 568136,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -123,52 +123,60 @@
   ],
   "buffers": [
     {
-      "byteLength": 2395128,
+      "byteLength": 737112,
       "uri": "scene.bin"
     }
   ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
   "images": [
     {
-      "uri": "textures/Material.001_baseColor.png"
-    },
-    {
-      "uri": "textures/Material.001_metallicRoughness.png"
+      "uri": "textures/Material.001_diffuse.png"
     },
     {
       "uri": "textures/Material.001_normal.png"
+    },
+    {
+      "uri": "textures/Material.001_occlusion.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 0,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.42675367394463393,
+          "specularFactor": [
+            0.02,
+            0.02,
+            0.02
+          ]
+        }
+      },
       "name": "Material.001",
       "normalTexture": {
-        "index": 2,
+        "index": 1,
         "scale": 1,
         "texCoord": 0
       },
       "occlusionTexture": {
-        "index": 1,
+        "index": 2,
         "strength": 1,
         "texCoord": 0
-      },
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "baseColorTexture": {
-          "index": 0,
-          "texCoord": 0
-        },
-        "metallicFactor": 0.26391006097560976,
-        "metallicRoughnessTexture": {
-          "index": 1,
-          "texCoord": 0
-        },
-        "roughnessFactor": 0.59999999999999998
       }
     }
   ],
@@ -211,17 +219,13 @@
     },
     {
       "children": [
-        3,
-        16
+        3
       ],
       "name": "Root"
     },
     {
       "children": [
-        4,
-        7,
-        10,
-        13
+        4
       ],
       "matrix": [
         1,
@@ -236,165 +240,9 @@
         0,
         1,
         0,
-        0.17251000000000002,
-        -0.10181,
-        -0.025580000000000006,
-        1
-      ],
-      "name": "Empty.010"
-    },
-    {
-      "children": [
-        5
-      ],
-      "matrix": [
-        0.90630999999999995,
-        -0.42262000000000005,
-        0,
-        0,
-        0.32685000000000008,
-        0.70093000000000005,
-        -0.6339300000000001,
-        0,
-        0.26791000000000004,
-        0.57454000000000005,
-        0.77339000000000002,
-        0,
-        3.7299800000000003,
-        1.8015099999999999,
-        3.7197399999999998,
-        1
-      ],
-      "name": "Area.011_empty"
-    },
-    {
-      "children": [
-        6
-      ],
-      "name": "Area.011"
-    },
-    {
-      "name": "Area.011"
-    },
-    {
-      "children": [
-        8
-      ],
-      "matrix": [
-        0.5,
-        -0.86603000000000008,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        -0.86603000000000008,
-        -0.5,
-        0,
-        0,
-        -6.5931299999999995,
-        -3.8458899999999998,
-        3.1205500000000002,
-        1
-      ],
-      "name": "Area.010_empty"
-    },
-    {
-      "children": [
-        9
-      ],
-      "name": "Area.010"
-    },
-    {
-      "name": "Area.010"
-    },
-    {
-      "children": [
-        11
-      ],
-      "matrix": [
-        0.90630999999999995,
-        0.42262000000000005,
-        -0,
-        0,
-        -0.32685000000000008,
-        0.70093000000000005,
-        -0.6339300000000001,
-        0,
-        -0.26791000000000004,
-        0.57454000000000005,
-        0.77339000000000002,
-        0,
-        -2.2079600000000004,
-        2.57972,
-        3.7197399999999998,
-        1
-      ],
-      "name": "Area.009_empty"
-    },
-    {
-      "children": [
-        12
-      ],
-      "name": "Area.009"
-    },
-    {
-      "name": "Area.009"
-    },
-    {
-      "children": [
-        14
-      ],
-      "matrix": [
-        0,
-        0,
-        -1,
-        0,
-        -1,
-        -0,
-        -0,
         0,
         -0,
-        1,
-        -0,
-        0,
-        2.6495200000000003,
-        2.0849500000000001,
-        2.4731399999999999,
-        1
-      ],
-      "name": "Area.008_empty"
-    },
-    {
-      "children": [
-        15
-      ],
-      "name": "Area.008"
-    },
-    {
-      "name": "Area.008"
-    },
-    {
-      "children": [
-        17
-      ],
-      "matrix": [
-        -0.9537000000000001,
-        0,
-        -0.30076000000000003,
-        0,
-        0.30076000000000003,
-        0,
-        -0.9537000000000001,
-        0,
-        -0,
-        -1,
-        -0,
-        0,
-        0,
-        -0,
-        0,
+        0.3293100000000001,
         1
       ],
       "name": "default"
